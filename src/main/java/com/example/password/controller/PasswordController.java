@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class PasswordController {
 
 
-
     @GetMapping("/authorization")
     public String authorization(@RequestParam("login") String login, @RequestParam("password") String password, @RequestParam("confirmPassword") String confirmPassword) {
         try {

@@ -1,5 +1,6 @@
 package com.example.password.exception;
-public class WrongPasswordException extends RuntimeException{
+
+public class WrongPasswordException extends RuntimeException {
     public WrongPasswordException() {
         super();
     }
