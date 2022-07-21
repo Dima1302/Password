@@ -25,7 +25,11 @@ public class PasswordService {
         if (password.length() >= 20 && !password.equals(confirmPassword)) {
             throw new WrongPasswordException();
         }
+        if (!login.matches("[ A-Za-z0-9._]+") && password.length() < 20 && password.equals(confirmPassword) && password.matches(" [ A-Za-z0-9._]_+")) {
+
+
+        }
+
+
     }
-
-
 }
